@@ -1,0 +1,11 @@
+#N canvas 471 114 450 300 10;
+#X obj 342 247 print;
+#X obj 345 213 udpreceive 3001;
+#X obj 24 90 route CO2 sr;
+#X floatatom 25 151 5 0 0 0 - - -, f 5;
+#X floatatom 63 151 6 0 0 0 - - -, f 6;
+#X obj 25 15 netreceive 3002;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 2 1 4 0;
+#X connect 5 0 2 0;
